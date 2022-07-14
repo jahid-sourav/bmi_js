@@ -64,14 +64,18 @@
                 else{
                     document.getElementById("underweight").innerHTML = "";
                 }
-                // if (bmi >= 0) {
-                //     document.getElementById("normal").innerHTML = "but you are Normal.";
-                //     18.5to24.9
-                // } 
-                // if (bmi >= 0) {
-                //     document.getElementById("overweight").innerHTML = "but you are Overweight.";
-                //     25to29.9
-                // }
+                if (bmi >= 18.5 && bmi <= 24.9) {
+                    document.getElementById("normal").innerHTML = "but you are Normal.";
+                } 
+                else{
+                    document.getElementById("normal").innerHTML = "";
+                }
+                if (bmi >= 25 && bmi <= 29.9) {
+                    document.getElementById("overweight").innerHTML = "but you are Overweight.";
+                }
+                else{
+                    document.getElementById("overweight").innerHTML = "";
+                }
                 if (bmi >= 30) {
                     document.getElementById("obese").innerHTML = "but you are Obese.";
                 }
